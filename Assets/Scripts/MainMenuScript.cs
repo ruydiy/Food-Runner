@@ -1,11 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public void Play()
-    {
-        // Load main map scene
-    }
+    public void Play() => SceneManager.LoadScene("Game");
 
     public void Options()
     {
