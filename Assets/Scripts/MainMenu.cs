@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuScript : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuScreen;
     public GameObject controlsScreen;
