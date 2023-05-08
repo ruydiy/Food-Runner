@@ -5,9 +5,9 @@ public class MainMenuScript : MonoBehaviour
 {
     public void Play() => SceneManager.LoadScene("Game");
 
-    public void Options()
+    public void Rules()
     {
-        // Options button click logic
+        // Rules button click logic
     }
 
     public void Quit() => Application.Quit();
