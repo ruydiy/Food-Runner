@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -18,6 +19,23 @@ public class FirstPersonController : MonoBehaviour
     private float groundCheckDistance = 0.1f;
     private float gravity = -60f;
 
+    //Respawn 
+    public float threshold;
+    private int br = 0;
+
+    public Image heartImage;
+    public Sprite fullHeartSprite;
+
+    private void FixedUpdate()
+    {
+        if (transform.position.y < threshold)
+        {
+            //fixed Respawn position
+            transform.position = new Vector3(0.1f, 0.1f, 0.1f);
+            br++;
+            Debug.Log(br);
+        }
+    }
     void Start()
     {
         characterController = GetComponent<CharacterController>();
