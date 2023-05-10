@@ -44,7 +44,12 @@ public class FirstPersonController : MonoBehaviour
                 case 1: heartImage.sprite = halfBurger; break;
                 case 2: heartImage.sprite = bitenBurger; break;
                 case 3: heartImage.sprite = noBurger; break;
-                case 4: SceneManager.LoadScene("MainMenu");  break;
+                case 4:
+                    {
+                        SceneManager.LoadScene("MainMenu");
+                        Cursor.lockState = CursorLockMode.None;
+                    }
+                    break;
                 default:
                     break;
             }
