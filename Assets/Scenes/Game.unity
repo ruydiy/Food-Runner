@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 519602076}
   - component: {fileID: 519602075}
   m_Layer: 5
-  m_Name: Image
+  m_Name: heartImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,8 +1415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -425, y: 170}
-  m_SizeDelta: {x: -870, y: -360}
+  m_AnchoredPosition: {x: -400, y: 155}
+  m_SizeDelta: {x: -820, y: -330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519602075
 MonoBehaviour:
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: be3c835c3f7dc314fb7a5976d3c40351, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 30effbbf3b8bba446ac0a664f54631c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3931,9 +3931,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 667731049}
     - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
+      propertyPath: noBurger
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 04c2a3d75a4b76f46a8d195144a64504, type: 3}
+    - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
       propertyPath: threshold
       value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
+      propertyPath: fullBurger
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 30effbbf3b8bba446ac0a664f54631c1, type: 3}
+    - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
+      propertyPath: halfBurger
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 496b87566b4e0954382da0e0f52a4107, type: 3}
     - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
       propertyPath: heartImage
       value: 
@@ -3946,6 +3958,14 @@ PrefabInstance:
       propertyPath: spawnSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
+      propertyPath: bitenBurger
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 35680a693f39aea47ac83e25003b6bcd, type: 3}
+    - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
+      propertyPath: heartSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be3c835c3f7dc314fb7a5976d3c40351, type: 3}
     - target: {fileID: 6427033738922520187, guid: 6f3f6aec76c37134888a8fbe2ddbaa0b, type: 3}
       propertyPath: respawnPoint
       value: 
