@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -18,6 +20,48 @@ public class FirstPersonController : MonoBehaviour
     private float groundCheckDistance = 0.1f;
     private float gravity = -60f;
 
+    //Respawn 
+    public float threshold;
+    private int br = 0;
+
+    public Image heartImage;
+    public Sprite fullBurger;
+    public Sprite halfBurger;
+    public Sprite bitenBurger;
+    public Sprite noBurger;
+
+    private void FixedUpdate()
+    {
+        if (transform.position.y < threshold)
+        {
+            //fixed Respawn position
+            transform.position = new Vector3(0.1f, 0.1f, 0.1f);
+            br++;
+            Debug.Log(br);
+            switch (br)
+            {
+                case 0: heartImage.sprite = fullBurger; break;
+                case 1: heartImage.sprite = halfBurger; break;
+                case 2: heartImage.sprite = bitenBurger; break;
+                case 3: heartImage.sprite = noBurger; break;
+                case 4:
+                    {
+                        SceneManager.LoadScene("MainMenu");
+                        Cursor.lockState = CursorLockMode.None;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            /*
+            if(br == 1)
+            {
+                heartImage.sprite = heartSprite;
+            }
+            */
+            //Destroy(heartImage.gameObject);
+        }
+    }
     void Start()
     {
         characterController = GetComponent<CharacterController>();
