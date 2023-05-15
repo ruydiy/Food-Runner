@@ -30,6 +30,7 @@ public class FirstPersonController : MonoBehaviour
     public Sprite bitenBurger;
     public Sprite noBurger;
 
+   
     private void FixedUpdate()
     {
         if (transform.position.y < threshold)
