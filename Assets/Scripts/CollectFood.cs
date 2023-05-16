@@ -12,7 +12,7 @@ public class CollectFood : MonoBehaviour
         {
             base.gameObject.SetActive(false);
             foodCount++; // Increase the food counter by 1
-            Debug.Log("Food Count: " + foodCount); // Log the current food count to the console
+            //Debug.Log("Food Count: " + foodCount); // Log the current food count to the console
         }
     }
 }
